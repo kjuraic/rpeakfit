@@ -1,0 +1,10 @@
+Package: rpeakfit
+Type: Package
+Title: multi peak fitter
+Version: 0.1
+Date: 2015-04-08
+Author: K. Juraic
+Maintainer: <kjuraic@gmail.com>
+Description: idea is to have interactive multi peak fitting
+License: GPL
+LazyData: TRUE
