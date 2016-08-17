@@ -1,1 +1,4 @@
-exportPattern("^[[:alpha:]]+")
+exportPattern("^[^\\.]")
+
+importFrom("graphics", "abline", "locator", "plot", "points")
+importFrom("stats", "coef", "nls", "predict")

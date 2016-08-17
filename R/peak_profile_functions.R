@@ -2,13 +2,15 @@
 #' @description Gaussian amplitude function
 #' @author K. Juraic
 #' @param x x value
-#' @param p peak paramteres (p[1] = amplitude, p[2] = center, p[3] = width st.dev.)
+#' @param y0 backgroubd
+#' @param A amplitude
+#' @param xc peak center
+#' @param w peak width
 #' @return y y value
 #' @examples
-#' gaussianAmpl(x = 0.1, p = c(1, 0, .5))
-#'
-gaussianAmpl <- function(x, p){
-  y <- p[1] * exp(-.5 * ((x - p[2]) / p[3])^2)
+#'    \dontrun{gaussianAmpl(x = 0.1, y0 = 0, A = 1, xc = 0, w = 1)}
+gaussianAmpl <- function(x, y0, A, xc, w){
+  y <- y0 + A * exp(-.5 * ((x - xc) / w) ^ 2)
   return(y)
 }
 
@@ -16,14 +18,16 @@ gaussianAmpl <- function(x, p){
 #' @description Gaussian area function
 #' @author K. Juraic
 #' @param x x value
-#' @param p peak paramteres (p[1] = amplitude, p[2] = center, p[3] = width st.dev.)
+#' @param y0 backgroubd
+#' @param A amplitude
+#' @param xc peak center
+#' @param w peak width
 #' @return y y value
 #' @examples
-#' gaussianArea(x = 0.1, p = c(1, 0, .5))
-gaussianArea <- function(x, p){
-  y = p[0] / (sqrt(2*pi) * p[3]) * exp(-.5 * ((x - p[2]) / p[3])^2)
+#'    \dontrun{gaussianArea(x = 0.1, y0 = 0, A = 1, xc = 0, w = 1)}
+gaussianArea <- function(x, y0, A, xc, w){
+  y = y0 + A / (sqrt(2*pi) * w) * exp(-.5 * ((x - xc) / w) ^ 2)
   return(y)
 }
 
 
-multipeak(x, peakType)

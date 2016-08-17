@@ -5,6 +5,9 @@ Version: 0.1
 Date: 2015-04-08
 Author: K. Juraic
 Maintainer: <kjuraic@gmail.com>
-Description: idea is to have interactive multi peak fitting
+Description: Idea is to have interactive multi peak fitting. Peaks profile
+    function taken from windows peakfit program.
+Imports:
 License: GPL
-LazyData: TRUE
+LazyData: true
+RoxygenNote: 5.0.1
