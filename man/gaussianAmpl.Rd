@@ -26,7 +26,9 @@ Gaussian amplitude function
 \examples{
    \dontrun{gaussianAmpl(x = 0.1, y0 = 0, A = 1, xc = 0, w = 1)}
 }
+\references{
+PeakFit v4.11
+}
 \author{
 K. Juraic
 }
-

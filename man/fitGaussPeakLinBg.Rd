@@ -31,4 +31,3 @@ Fit peak to gaussian function with linear background. Fitting
 \author{
 Krunoslav Juraic
 }
-

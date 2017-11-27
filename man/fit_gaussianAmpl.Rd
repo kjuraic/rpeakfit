@@ -28,4 +28,3 @@ peakfit gaussian with automatic parameter and fit boundaries estimation
 \author{
 K. Juraic
 }
-

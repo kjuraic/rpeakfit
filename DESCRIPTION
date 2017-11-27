@@ -10,4 +10,4 @@ Description: Idea is to have interactive multi peak fitting. Peaks profile
 Imports:
 License: GPL
 LazyData: true
-RoxygenNote: 5.0.1
+RoxygenNote: 6.0.1
